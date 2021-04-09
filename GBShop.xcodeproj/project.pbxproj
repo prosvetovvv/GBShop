@@ -13,6 +13,8 @@
 		E10F09BA261C3B0F008D8AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10F09B8261C3B0F008D8AAC /* LaunchScreen.storyboard */; };
 		E10F09C5261C3B0F008D8AAC /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F09C4261C3B0F008D8AAC /* GBShopTests.swift */; };
 		E10F09D0261C3B0F008D8AAC /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F09CF261C3B0F008D8AAC /* GBShopUITests.swift */; };
+		E10F09F626202F70008D8AAC /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F09F526202F70008D8AAC /* AbstractErrorParser.swift */; };
+		E10F09FE2620302E008D8AAC /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F09FD2620302E008D8AAC /* ErrorParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		E10F09CB261C3B0F008D8AAC /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10F09CF261C3B0F008D8AAC /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		E10F09D1261C3B0F008D8AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10F09F526202F70008D8AAC /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
+		E10F09FD2620302E008D8AAC /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 		E10F09EB261C738D008D8AAC /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E10F09F426202EFF008D8AAC /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -184,6 +189,15 @@
 				E10F09BB261C3B0F008D8AAC /* Info.plist */,
 			);
 			path = Environments;
+			sourceTree = "<group>";
+		};
+		E10F09F426202EFF008D8AAC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E10F09F526202F70008D8AAC /* AbstractErrorParser.swift */,
+				E10F09FD2620302E008D8AAC /* ErrorParser.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,8 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10F09F626202F70008D8AAC /* AbstractErrorParser.swift in Sources */,
 				E10F09AE261C3B0D008D8AAC /* AppDelegate.swift in Sources */,
 				E10F09B0261C3B0D008D8AAC /* SceneDelegate.swift in Sources */,
+				E10F09FE2620302E008D8AAC /* ErrorParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
