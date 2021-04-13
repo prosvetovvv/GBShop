@@ -22,16 +22,12 @@
 		E10F0A1B2620804D008D8AAC /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A1A2620804D008D8AAC /* RequestRouter.swift */; };
 		E10F0A2026208705008D8AAC /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A1F26208705008D8AAC /* LoginResult.swift */; };
 		E10F0A252620871F008D8AAC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A242620871F008D8AAC /* User.swift */; };
-		E10F0A2B26208783008D8AAC /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A2A26208783008D8AAC /* AuthRequestFactory.swift */; };
-		E10F0A33262087BC008D8AAC /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A32262087BC008D8AAC /* Auth.swift */; };
+		E10F0A2B26208783008D8AAC /* AccountRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A2A26208783008D8AAC /* AccountRequestFactory.swift */; };
+		E10F0A33262087BC008D8AAC /* AccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A32262087BC008D8AAC /* AccountRequest.swift */; };
 		E10F0A3826208902008D8AAC /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A3726208902008D8AAC /* RequestFactory.swift */; };
 		E10F0A4026246104008D8AAC /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A3F26246104008D8AAC /* LogoutResult.swift */; };
-		E10F0A4526246194008D8AAC /* QuitRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A4426246194008D8AAC /* QuitRequestFactory.swift */; };
-		E10F0A4A26246292008D8AAC /* Quit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A4926246292008D8AAC /* Quit.swift */; };
-		E10F0A5526246F4D008D8AAC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A5426246F4D008D8AAC /* Profile.swift */; };
-		E10F0A5A262471F4008D8AAC /* EditProfileRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A59262471F4008D8AAC /* EditProfileRequestFactory.swift */; };
 		E10F0A5F26247277008D8AAC /* EditProfileResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A5E26247277008D8AAC /* EditProfileResult.swift */; };
-		E10F0A6426247485008D8AAC /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A6326247485008D8AAC /* EditProfile.swift */; };
+		E1DFB8832625C492006B2060 /* AccountRequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DFB8822625C492006B2060 /* AccountRequestModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,16 +74,12 @@
 		E10F0A1A2620804D008D8AAC /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
 		E10F0A1F26208705008D8AAC /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		E10F0A242620871F008D8AAC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E10F0A2A26208783008D8AAC /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
-		E10F0A32262087BC008D8AAC /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		E10F0A2A26208783008D8AAC /* AccountRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRequestFactory.swift; sourceTree = "<group>"; };
+		E10F0A32262087BC008D8AAC /* AccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRequest.swift; sourceTree = "<group>"; };
 		E10F0A3726208902008D8AAC /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		E10F0A3F26246104008D8AAC /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
-		E10F0A4426246194008D8AAC /* QuitRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitRequestFactory.swift; sourceTree = "<group>"; };
-		E10F0A4926246292008D8AAC /* Quit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quit.swift; sourceTree = "<group>"; };
-		E10F0A5426246F4D008D8AAC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		E10F0A59262471F4008D8AAC /* EditProfileRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRequestFactory.swift; sourceTree = "<group>"; };
 		E10F0A5E26247277008D8AAC /* EditProfileResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileResult.swift; sourceTree = "<group>"; };
-		E10F0A6326247485008D8AAC /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		E1DFB8822625C492006B2060 /* AccountRequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRequestModels.swift; sourceTree = "<group>"; };
 		E3AE971698B9800EDB27E511 /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -208,6 +200,7 @@
 		E10F09E7261C733D008D8AAC /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				E1DFB87E2625BC89006B2060 /* Models */,
 				E10F0A2926208763008D8AAC /* Network */,
 			);
 			path = BusinessLogic;
@@ -219,7 +212,6 @@
 				E10F0A242620871F008D8AAC /* User.swift */,
 				E10F0A1F26208705008D8AAC /* LoginResult.swift */,
 				E10F0A3F26246104008D8AAC /* LogoutResult.swift */,
-				E10F0A5426246F4D008D8AAC /* Profile.swift */,
 				E10F0A5E26247277008D8AAC /* EditProfileResult.swift */,
 			);
 			path = Entity;
@@ -279,15 +271,19 @@
 		E10F0A2926208763008D8AAC /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E10F0A2A26208783008D8AAC /* AuthRequestFactory.swift */,
-				E10F0A4426246194008D8AAC /* QuitRequestFactory.swift */,
-				E10F0A59262471F4008D8AAC /* EditProfileRequestFactory.swift */,
-				E10F0A32262087BC008D8AAC /* Auth.swift */,
-				E10F0A4926246292008D8AAC /* Quit.swift */,
-				E10F0A6326247485008D8AAC /* EditProfile.swift */,
+				E10F0A2A26208783008D8AAC /* AccountRequestFactory.swift */,
+				E10F0A32262087BC008D8AAC /* AccountRequest.swift */,
 				E10F0A3726208902008D8AAC /* RequestFactory.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		E1DFB87E2625BC89006B2060 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1DFB8822625C492006B2060 /* AccountRequestModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -529,22 +525,18 @@
 			files = (
 				E10F0A3826208902008D8AAC /* RequestFactory.swift in Sources */,
 				E10F09F626202F70008D8AAC /* AbstractErrorParser.swift in Sources */,
-				E10F0A5A262471F4008D8AAC /* EditProfileRequestFactory.swift in Sources */,
 				E10F0A1126204802008D8AAC /* DataRequest.swift in Sources */,
-				E10F0A2B26208783008D8AAC /* AuthRequestFactory.swift in Sources */,
+				E10F0A2B26208783008D8AAC /* AccountRequestFactory.swift in Sources */,
 				E10F0A1B2620804D008D8AAC /* RequestRouter.swift in Sources */,
 				E10F09AE261C3B0D008D8AAC /* AppDelegate.swift in Sources */,
 				E10F0A4026246104008D8AAC /* LogoutResult.swift in Sources */,
 				E10F0A2026208705008D8AAC /* LoginResult.swift in Sources */,
-				E10F0A5526246F4D008D8AAC /* Profile.swift in Sources */,
-				E10F0A33262087BC008D8AAC /* Auth.swift in Sources */,
-				E10F0A4526246194008D8AAC /* QuitRequestFactory.swift in Sources */,
+				E1DFB8832625C492006B2060 /* AccountRequestModels.swift in Sources */,
+				E10F0A33262087BC008D8AAC /* AccountRequest.swift in Sources */,
 				E10F0A252620871F008D8AAC /* User.swift in Sources */,
 				E10F0A1626207DD9008D8AAC /* AbstractRequestFactory.swift in Sources */,
 				E10F0A5F26247277008D8AAC /* EditProfileResult.swift in Sources */,
 				E10F09FE2620302E008D8AAC /* ErrorParser.swift in Sources */,
-				E10F0A4A26246292008D8AAC /* Quit.swift in Sources */,
-				E10F0A6426247485008D8AAC /* EditProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

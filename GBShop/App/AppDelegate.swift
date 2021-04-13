@@ -7,14 +7,20 @@
 
 import UIKit
 
+struct AppConfig {
+    static let sessionQueue = DispatchQueue.global(qos: .utility)
+    static let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+}
+
 @main
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    let requestFactory = RequestFactory()
+    var requestFactory = RequestFactory(sessionQueue: AppConfig.sessionQueue, baseUrl: AppConfig.baseUrl)
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let auth = requestFactory.makeAuthRequestFactory()
-        auth.login(userName: "Somebody", password: "mypassword") { response in
+        let accountRequestFactory = requestFactory.makeAccountRequestFactory()
+        
+        accountRequestFactory.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
             case .success(let login):
                 print(login)
@@ -23,8 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        let quit = requestFactory.makeQuitRequestFactory()
-        quit.logout(idUser: 123) { response in
+        accountRequestFactory.logout(idUser: 123) { response in
             switch response.result {
             case .success(let quit):
                 print(quit)
@@ -33,8 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        let editProfile = requestFactory.editProfile()
-        editProfile.editProfile(id: 123, userName: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", creditCard: "9872389-2424-234224-234", bio: "This is good! I think I will switch to another language") { response in
+        accountRequestFactory.editProfile(id: 123, userName: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", creditCard: "9872389-2424-234224-234", bio: "This is good! I think I will switch to another language") { response in
             switch response.result {
             case .success(let edit):
                 print(edit)

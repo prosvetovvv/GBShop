@@ -8,11 +8,9 @@
 import Foundation
 import Alamofire
 
-class RequestFactory {
-    
-    func makeErrorParser() -> AbstractErrorParser {
-        ErrorParser()
-    }
+struct RequestFactory {
+    let sessionQueue: DispatchQueue
+    let baseUrl: URL
     
     lazy var commonSession: Session = {
         let configuration = URLSessionConfiguration.default
@@ -22,20 +20,12 @@ class RequestFactory {
         return manager
     }()
     
-    let sessionQueue = DispatchQueue.global(qos: .utility)
-    
-    func makeAuthRequestFactory() -> AuthRequestFactory {
-        let errorParser = makeErrorParser()
-        return Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    func makeErrorParser() -> AbstractErrorParser {
+        ErrorParser()
     }
     
-    func makeQuitRequestFactory() -> QuitRequestFactory {
+    mutating func makeAccountRequestFactory() -> AccountRequestFactory {
         let errorParser = makeErrorParser()
-        return Quit(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
-    }
-    
-    func editProfile() -> EditProfileRequestFactory {
-        let errorParser = makeErrorParser()
-        return EditProfile(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+        return AccountRequest(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue, baseUrl: baseUrl)
     }
 }
