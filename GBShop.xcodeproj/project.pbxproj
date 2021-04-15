@@ -28,6 +28,8 @@
 		E10F0A4026246104008D8AAC /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A3F26246104008D8AAC /* LogoutResult.swift */; };
 		E10F0A5F26247277008D8AAC /* EditProfileResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F0A5E26247277008D8AAC /* EditProfileResult.swift */; };
 		E1DFB8832625C492006B2060 /* AccountRequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DFB8822625C492006B2060 /* AccountRequestModels.swift */; };
+		E1DFB8A02626FAB4006B2060 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DFB89F2626FAB4006B2060 /* ResponseCodableTests.swift */; };
+		E1DFB8A626284A8A006B2060 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DFB8A526284A8A006B2060 /* Stubs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		E10F0A3F26246104008D8AAC /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
 		E10F0A5E26247277008D8AAC /* EditProfileResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileResult.swift; sourceTree = "<group>"; };
 		E1DFB8822625C492006B2060 /* AccountRequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRequestModels.swift; sourceTree = "<group>"; };
+		E1DFB89F2626FAB4006B2060 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
+		E1DFB8A526284A8A006B2060 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
 		E3AE971698B9800EDB27E511 /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -159,6 +163,7 @@
 		E10F09AC261C3B0D008D8AAC /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
+				E1DFB8A426284A4C006B2060 /* Mock */,
 				E10F09E3261C7317008D8AAC /* App */,
 				E10F09EB261C738D008D8AAC /* Core */,
 				E10F09EC261C7397008D8AAC /* Resources */,
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E10F09C4261C3B0F008D8AAC /* GBShopTests.swift */,
+				E1DFB89F2626FAB4006B2060 /* ResponseCodableTests.swift */,
 				E10F09C6261C3B0F008D8AAC /* Info.plist */,
 			);
 			path = GBShopTests;
@@ -284,6 +290,14 @@
 				E1DFB8822625C492006B2060 /* AccountRequestModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E1DFB8A426284A4C006B2060 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E1DFB8A526284A8A006B2060 /* Stubs.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,6 +546,7 @@
 				E10F0A4026246104008D8AAC /* LogoutResult.swift in Sources */,
 				E10F0A2026208705008D8AAC /* LoginResult.swift in Sources */,
 				E1DFB8832625C492006B2060 /* AccountRequestModels.swift in Sources */,
+				E1DFB8A626284A8A006B2060 /* Stubs.swift in Sources */,
 				E10F0A33262087BC008D8AAC /* AccountRequest.swift in Sources */,
 				E10F0A252620871F008D8AAC /* User.swift in Sources */,
 				E10F0A1626207DD9008D8AAC /* AbstractRequestFactory.swift in Sources */,
@@ -545,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E10F09C5261C3B0F008D8AAC /* GBShopTests.swift in Sources */,
+				E1DFB8A02626FAB4006B2060 /* ResponseCodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
