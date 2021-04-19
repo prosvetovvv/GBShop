@@ -28,4 +28,9 @@ struct RequestFactory {
         let errorParser = makeErrorParser()
         return AccountRequest(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue, baseUrl: baseUrl)
     }
+    
+    mutating func makeProductRequestFactory() -> ProductRequestFactory {
+        let errorParser = makeErrorParser()
+        return ProductRequest(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue, baseUrl: baseUrl)
+    }
 }

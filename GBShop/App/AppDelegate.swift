@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let accountRequestFactory = requestFactory.makeAccountRequestFactory()
+        let productRequestFactory = requestFactory.makeProductRequestFactory()
         
         accountRequestFactory.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
@@ -43,7 +44,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             case .success(let edit):
                 print(edit)
             case .failure(let error):
-                print(error)
+                print(error.localizedDescription)
+            }
+        }
+        
+        productRequestFactory.getProductList(page: 1, id: 1) { response in
+            switch response.result {
+            case .success(let list):
+                print(list)
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
         
