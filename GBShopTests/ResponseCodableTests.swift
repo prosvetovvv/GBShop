@@ -11,7 +11,7 @@ import Alamofire
 @testable import GBShop
 
 class ResponseCodableTests: XCTestCase {
-    var errorParserStub: ErrorParserStub?
+    var errorParserStub: ErrorParserStub!
     
     override func setUpWithError() throws {
         errorParserStub = ErrorParserStub()
@@ -22,7 +22,6 @@ class ResponseCodableTests: XCTestCase {
     }
     
     func testShouldDownloadAndParse() throws {
-        //let download = XCTestExpectation(description: "Download https://failUrl")
         let download = expectation(description: "Download https://failUrl")
         let errorParser = try XCTUnwrap(errorParserStub)
         
@@ -38,9 +37,5 @@ class ResponseCodableTests: XCTestCase {
             }
         waitForExpectations(timeout: 5.0)
     }
-    
-    
-    
-    
     
 }
