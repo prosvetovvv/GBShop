@@ -16,6 +16,7 @@ struct RequestFactory {
         let configuration = URLSessionConfiguration.default
         configuration.httpShouldSetCookies = false
         configuration.headers = .default
+        //configuration.headers = ["Content-Type": "application/json"]
         let manager = Session(configuration: configuration)
         return manager
     }()
