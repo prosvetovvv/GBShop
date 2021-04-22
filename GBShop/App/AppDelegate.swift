@@ -9,7 +9,8 @@ import UIKit
 
 struct AppConfig {
     static let sessionQueue = DispatchQueue.global(qos: .utility)
-    static let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    //static let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    static let baseUrl = URL(string: "https://powerful-reef-79731.herokuapp.com/")!
 }
 
 @main

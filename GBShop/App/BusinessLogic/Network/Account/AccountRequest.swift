@@ -16,7 +16,7 @@ struct AccountRequest: AbstractRequestFactory {
 }
 
 extension AccountRequest: AccountRequestFactory {
-    func login(userName: String, password: String, completionHandler: @escaping (AFDataResponse<LoginResult>) -> Void) {
+    func login(userName: String, password: String, completionHandler: @escaping (AFDataResponse<LoginResponse>) -> Void) {
         let requestModel = LoginModel(baseUrl: baseUrl, login: userName, password: password)
         self.request(request: requestModel, completionHandler: completionHandler)
     }

@@ -27,7 +27,7 @@ class ResponseCodableTests: XCTestCase {
         
         AF
             .request("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/login.json")
-            .responseCodable(errorParser: errorParser) { (response: AFDataResponse<LoginResult>) in
+            .responseCodable(errorParser: errorParser) { (response: AFDataResponse<LoginResponse>) in
                 switch response.result {
                 case .success(_):
                     download.fulfill()
