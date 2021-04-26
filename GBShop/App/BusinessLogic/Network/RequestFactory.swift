@@ -16,11 +16,11 @@ struct RequestFactory {
         let configuration = URLSessionConfiguration.default
         configuration.httpShouldSetCookies = false
         configuration.headers = .default
-        //configuration.headers = ["Content-Type": "application/json"]
+        //configuration.headers = ["Content-Type": "application/json", "Content-Length": "calculated when request is sent"]
         let manager = Session(configuration: configuration)
         return manager
     }()
-    
+     
     func makeErrorParser() -> AbstractErrorParser {
         ErrorParser()
     }

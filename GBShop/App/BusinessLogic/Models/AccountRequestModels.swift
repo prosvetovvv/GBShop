@@ -10,7 +10,7 @@ import Alamofire
 
 struct LoginModel: RequestRouter {
     let baseUrl: URL
-    let method: HTTPMethod = .get
+    let method: HTTPMethod = .post
     //let path: String = "login.json"
     let path: String = "login"
     
@@ -26,19 +26,19 @@ struct LoginModel: RequestRouter {
 
 struct LogoutModel: RequestRouter {
     var baseUrl: URL
-    var method: HTTPMethod = .get
+    var method: HTTPMethod = .post
     //var path: String = "logout.json"
     var path: String = "logout"
     
     let idUser: Int
     var parameters: Parameters? {
-        ["id_user": idUser]
+        ["userID": idUser]
     }
 }
 
 struct EditProfileModel: RequestRouter {
     let baseUrl: URL
-    let method: HTTPMethod = .get
+    let method: HTTPMethod = .post
     //var path: String = "changeUserData.json"
     var path: String = "edit_profile"
     

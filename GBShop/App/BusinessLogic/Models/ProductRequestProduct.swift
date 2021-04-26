@@ -10,7 +10,7 @@ import Alamofire
 
 struct ProductList: RequestRouter {
     let baseUrl: URL
-    let method: HTTPMethod = .get
+    let method: HTTPMethod = .post
     let path: String = "catalogData.json"
     
     let page: Int
